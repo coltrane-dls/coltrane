@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+     <link rel="stylesheet" href="coltrane.min.css">
+     <!-- <link rel="stylesheet" href="coppelize.css"> -->
+     <style media="screen"> .example{background-color: aliceblue;overflow-x: scroll;border-radius: 8px;}</style>
+  </head>
+  <body class="background" style="margin-bottom:30px;">
+
+    <div class="container ">
+      <br>
+      <br>
+        <div class="row">
+              <div class="col-md-3">  </div>
+              <div class="col-lg-5 col-sm-12 card">
+
+                    <br>
+                    <br>
+                    <div class=" text-center">
+                      <div class="display"> 🏀 Coltrane.css</div>
+                      <small class="neutral">v.Beta 1.3.0</small>
+                      <small class="neutral"> - Última actualización: 7 Dec 2022</small>
+                      <small class="neutral"> - Antes coppelize.css</small>
+                    </div>
+                    <br>
+
+                    <div class="text-center small">
+
+                        <a href="#colores">Colores</a> ·
+                        <a href="#tipo">Tipografias</a> ·
+                        <a href="#space">Espaciados</a>
+                        <br>
+                        <br>
+                        <a href="#stepper">Stepper</a> ·
+                        <a href="#btn">Botones</a> ·
+                        <a href="#check">Checkbox</a> ·
+                        <a href="#inputs">Inputs</a> ·
+                        <a href="#modal">Modal</a> ·
+                        <a href="#tooltip">Tooltip</a> ·
+                        <a href="#uploader">Uploader</a> ·
+                        <a href="#progressBar">ProgressBar</a> ·
+                        <a href="#avat">Avatar</a> ·
+                        <a href="#alert">Alert</a>
+
+                        <br>
+                        <br>
+                        <a href="#card">Card</a> |
+                        <a href="#columns">Sistema de columnas</a>
+
+                     </div>
+
+                    <br>
+                    <h1>👋 Hola Coder.</h1>
+                    <p>
+                      Bienvenido a Coltrane.css, esta hoja de estilo tiene el objetivo de ayudarte en el <span class="bold primary">  desarrollo de tu aplicación, página o componente</span>. Siendo agnostivo a cualquier framework y trabajando de forma colaborativa con otros sistemas.
+                    </p>
+
+                    <br>
+
+                    <h1>Instalación</h1>
+                    <p>Para la instalación de esta librería puedes utilizar la etiqueta link para utilizarlo dentro de tu proyecto HTML</p>
+                    <form action="" class="form-coppel">
+                      <textarea id="w3review" name="w3review" rows="1" cols="50" style="background-color: #1f1f22;color: yellow;"><link type="text/css" href="coltrane.css"></textarea>
+                    </form>
+                    <h1>Tokens</h1>
+                    <p>Coltrane esta conformado de algunas variables fundamentales, las cuales contruyen todos los componentes, pantallas y elmentos del front, estos son:</p>
+                    <br>
+                    <br>
+
+
+
+
+                      <h2 id="spaces">Espaciado</h2>
+                      <hr>
+                      Para utilizar las unidades de espaciado puedes ocupar las variables de css:
+                      <div class="example p-4">
+                        <ul>
+                          <li>var(--s-unit) = 8px</li>
+                          <li>var(--s-unit-2) = 16px</li>
+                          <li>var(--s-unit-3) = 24px</li>
+                          <li>var(--s-unit-4) = 32px</li>
+                          <li>var(--s-unit-5) = 40px</li>
+
+                        </ul>
+                      </div>
+                      <br>
+
+                      <br>
+                      <br>
+                      <h2 id="tipo">Tipografias</h2>
+                      <hr>
+                      <div class="example p-4">
+
+                        <div class="display">  Soy un .Display</div>
+                        <h1>Soy un H1</h1>
+                        <h2>Soy un H2</h2>
+                        <h3>Soy un H3</h3>
+                        <h4>Soy un H4</h4>
+
+                        <p> Soy un parrafo </p>
+
+                        <small>Soy un small</small>
+                        <br>
+                        <div class="caption">
+                                Soy un caption
+                        </div>
+
+                      </div>
+
+
+                      <br>
+                      <br>
+                      <br>
+                      <h2 id="colores">Colores</h2>
+                      <hr>
+
+
+                      <h3>Clases:</h3>
+                      <div class="example p-4">
+                        <div class="primary">  .primary</div>
+                        <div class="complementary">  .complementary</div>
+                        <div class="white primary-bg">  .white</div>
+                        <div class="neutral">  .neutral</div>
+                        <div class="black">  .black</div>
+                        <div class="error">  .error</div>
+                        <div class="success">  .success</div>
+                        <div class="warning">  .warning</div>
+                        <div class="info">  .info</div>
+                        <div class="sales">  .sales</div>
+                      </div>
+                      <br>
+                      <h3>Background:</h3>
+
+                      <div class="example p-4">
+                        <div class="primary-bg">  .primary-bg</div>
+                        <div class="complementary-bg">  .complementary-bg</div>
+                        <div class="primary white-bg">  .white-bg</div>
+                        <div class="neutral-bg">  .neutral-bg</div>
+                        <div class="white black-bg">  .black-bg</div>
+                        <div class="error-bg">  .error-bg</div>
+                        <div class="success-bg">  .success-bg</div>
+                        <div class="warning-bg">  .warning-bg</div>
+                        <div class="info-bg">  .info-bg</div>
+                        <div class="sales-bg">  .sales-bg</div>
+                      </div>
+
+
+
+                    <br>
+                    <!-- ========================================================= -->
+
+                    <h1>Componentes</h1>
+
+                    <hr>
+
+
+                    <h2 id="stepper">📦 Stepper</h2>
+
+                    <div class="example p-5">
+
+                    <!-- ==================================================================================== STEPER-->
+                      <div class="stepper">
+                            <div class="stepper-group">
+                              <div class="stepper-step primary-bg ">
+                                <div class="checked-step"></div>
+                              </div>
+                              <div class="stepper-text">
+                                <label for="">Título</label>
+                                <label class="small">Subtitle</label>
+                              </div>
+                              <div class="stepper-line"></div>
+                            </div>
+
+                            <div class="stepper-group">
+                                <div class="stepper-step neutral-bg pencil">1</div>
+                                <div class="stepper-text">
+                                  <label for="">Título</label>
+                                  <label class="small">Subtitle</label>
+                                </div>
+                                <div class="stepper-line"></div>
+                            </div>
+
+                            <div class="stepper-group">
+                                <div class="stepper-step neutral-bg pencil">2</div>
+                                <div class="stepper-text">
+                                  <label for="">Título</label>
+                                </div>
+                            </div>
+                      </div>
+                    <!-- ==================================================================================== STEPER-->
+                    </div>
+
+
+                    <h2 id="btn">📦 Button <div class="alert">NEW 🎉</div></h2>
+                    <h3 id="btn">Primary</h3>
+                    <div class="example p-4">
+                      <button type="button" name="button" class="primary-button m-4">
+                        Default Primary Button
+                      </button>
+                      <br>
+                      <button type="button" name="button" class="primary-button large m-4">
+                        ".large" Primary Button
+                      </button>
+                      <br>
+                      <button type="button" name="button" class="primary-button m-4 responsive">
+                        ".responsive" - Primary Button
+                      </button>
+                    </div>
+                    <h3 id="btn">Secondary</h3>
+                    <div class="example">
+                      <button type="button" name="button" class="secondary-button m-4">
+                              Secondary Button
+                      </button>
+
+
+                      <button type="button" name="button" class="icon-button m-4 ">
+                              <img src="assets/icon.svg">
+                      </button>
+                    </div>
+                    <h3 id="btn">Link</h3>
+                    <div class="example p-4">
+                      
+                      <a href="" class="c-link">
+                        Link >
+                      </a>
+                    </div>
+                    
+
+                    
+
+                   
+
+
+
+                    <h2 id="check">📦 Checkbox</h2>
+                    <div class="example p-5">
+                      <!-- ==================================================================================== CHECKBOX-->
+
+                        <input type="checkbox" name="" value="">
+                        <label for="">Checkbox</label>
+
+                      <!-- ==================================================================================== CHECKBOX-->
+                    </div>
+
+
+
+                    <h2 id="inputs">📦 Input</h2>
+                    <div class="example p-4">
+                      <!-- ==================================================================================== INPUTS-->
+                          <form class="form-coppel" action="index.html" method="post" >
+                            <label  for="">Nombre <span class="small neutral">  (🥑 Regular input)</span></label>
+                            <input type="text" name="" value="" placeholder="María Gonzalez ejm.">
+                            <label for="" class="small">Un mensaje al usuario 🙃</label>
+                          </form>
+
+                          <br>
+                          <hr>
+                          <br>
+
+                          <form class="form-coppel" action="index.html" method="post" >
+                            <label  for="">Nombre <span class="small neutral">  (🔥 Error input)</span></label>
+                            <input class="error-border" type="text" name="" value="" placeholder="María Gonzalez ejm.">
+                            <label for="" class="small error">Un mensaje al usuario 🙃</label>
+                          </form>
+
+                          <br>
+                          <hr>
+                          <br>
+
+                          <form class="form-coppel" action="index.html" method="post" >
+                            <label  for="">Nombre <span class="small neutral">  (✅ Success input)</span></label>
+                            <input class="success-border" type="text" name="" value="" placeholder="María Gonzalez ejm.">
+                            <label for="" class="small success">Un mensaje al usuario 🙃</label>
+                          </form>
+
+
+
+                          <br>
+                          <hr>
+                          <br>
+
+                          <form class="form-coppel" action="index.html" method="post" >
+                            <label  for="" class="neutral">Nombre <span class="small neutral">  (✅ Disabled input)</span></label>
+                            <input class="" type="text" name="" value="" placeholder="María Gonzalez ejm." disabled>
+                            <label for="" class="small neutral">Un mensaje al usuario 🙃</label>
+                          </form>
+
+                          <br>
+                          <hr>
+                          <br>
+
+                          <form class="form-coppel" action="index.html" method="post" disabled>
+                            <label  for="" >Nombre <span class="small neutral">  (📦 Dropdown input)</span></label>
+                            <div class="select ">
+                                        <input type="radio" name="option" >
+                                        <i class="toggle icon icon-arrow-down"></i>
+                                        <i class="toggle icon icon-arrow-up"></i>
+                                        <span class="placeholder">Selecciona una opción</span>
+                                        <label class="option">
+                                            <input type="radio" name="option">
+                                            <span class="title animated fadeIn">Speedometer</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="option">
+                                            <span class="title animated fadeIn">Fire</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="option" disabled>
+                                            <span class="title animated fadeIn"></i>Handbag</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="option">
+                                            <span class="title animated fadeIn"></i>Badge</span>
+                                        </label>
+                                </div>
+                            <label for="" class="small neutral">Un mensaje al usuario 🙃</label>
+                          </form>
+
+
+                          <br>
+                          <hr>
+                          <br>
+
+                          <form class="form-coppel" action="index.html" method="post" disabled>
+                            <label  for="" >Nombre <span class="small neutral">  (📦 🔥Dropdown input DISABLED)</span></label>
+                            <div class="select ">
+                                        <input type="radio" name="option" disabled>
+                                        <!-- <i class="toggle icon icon-arrow-down"></i>
+                                        <i class="toggle icon icon-arrow-up"></i> -->
+                                        <span class="placeholder">Selecciona una opción</span>
+                                        <label class="option">
+                                            <input type="radio" name="option">
+                                            <span class="title animated fadeIn">Speedometer</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="option">
+                                            <span class="title animated fadeIn">Fire</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="option" disabled>
+                                            <span class="title animated fadeIn"></i>Handbag</span>
+                                        </label>
+                                        <label class="option">
+                                            <input type="radio" name="option">
+                                            <span class="title animated fadeIn"></i>Badge</span>
+                                        </label>
+                                </div>
+                            <label for="" class="small neutral">Un mensaje al usuario 🙃</label>
+                          </form>
+
+
+                          <br>
+                          <hr>
+                          <br>
+
+                          <form action="" class="form-coppel">
+                            <label  for="" >Fecha <span class="small neutral">  (📦 🔥 Date input)</span></label>
+                            <input type="date" name="fecha">
+                            <label for="" class="small neutral">Un mensaje al usuario 🙃</label>
+                          </form>
+
+
+
+                      <!-- ==================================================================================== INPUTS-->
+
+
+                    </div>
+                    <h3>Tamaños de input <div class="alert">NEW 🎉</div></h3>
+                    <div class="example p-4">
+
+                      <form class="form-coppel" action="index.html" method="post" >
+                        <label  for="">Nombre <span class="small neutral">  (🥑 Small input)</span></label>
+                        <input class="c-small" type="text" name="" value="" placeholder="María Gonzalez ejm.">
+                        <label for="" class="small">Un mensaje al usuario 🙃</label>
+                      </form>
+
+                      <br>
+                      <br>
+
+                      <form class="form-coppel" action="index.html" method="post" >
+                        <label  for="">Nombre <span class="small neutral">  (🥑 Medium /Regular input)</span></label>
+                        <input class="c-medium" type="text" name="" value="" placeholder="María Gonzalez ejm.">
+                        <label for="" class="small">Un mensaje al usuario 🙃</label>
+                      </form>
+
+                      <br>
+                      <br>
+
+                      <form class="form-coppel" action="index.html" method="post" >
+                        <label  for="">Nombre <span class="small neutral">  (🥑 Large input)</span></label>
+                        <input class="c-large" type="text" name="" value="" placeholder="María Gonzalez ejm.">
+                        <label for="" class="small">Un mensaje al usuario 🙃</label>
+                      </form>
+                      <br>
+                      <br>
+                      <form class="form-coppel" action="index.html" method="post" >
+                        <label  for="">Nombre <span class="small neutral">  (🥑 XLarge input)</span></label>
+                        <input class="c-xlarge" type="text" name="" value="" placeholder="María Gonzalez ejm.">
+                        <label for="" class="small">Un mensaje al usuario 🙃</label>
+                      </form>
+
+                    </div>
+
+                    <h2 id="modal">📦 Modal</h2>
+
+                    <div class="example p-5">
+
+                        <!-- ==================================================================================== MODALBOX-->
+                        <div class="modalbox">
+                            <a href="#modal"><img src="assets/cross.svg"></a>
+                            <h1>Título</h1>
+                            <p>La app que seleccionaste ya no se mostrará en tu pantalla de inicio.</p>
+                            <p> Si deseas verla de nuevo en el inicio ve a la sección deMis Aplicación y márcala como destacada. </p>
+                            <button type="button" name="button" class="primary-button mb-3"> De acuerdo, quitar</button>
+                            <button type="button" name="button" class="secondary-button "> Cancelar</button>
+                        </div>
+                        <!-- ==================================================================================== MODALBOX-->
+
+                    </div>
+
+                    <h2 id="modal">📦 Breadcrumb <div class="alert">NEW 🎉</div></h2> 
+
+                    <div class="example p-5">
+
+                        <!-- ==================================================================================== MODALBOX-->
+                        <ul class="c-breadcrumb">
+                          <li><a href="#">Opción 1</a> </li>
+                          <li><a href="#">Opción 2</a> </li>
+                          <li><a href="#">Opción 3</a> </li>
+                        </ul>
+                        <!-- ==================================================================================== MODALBOX-->
+
+                    </div>
+
+                    <h2 id="tooltip">📦 Tooltip</h2>
+
+                    <div class="example p-4">
+
+
+                        <!-- ==================================================================================== TOOLTIP-->
+                        <div class="tooltip ">
+                          <label>Holi 👋 Soy un tooltip, HOVER me ! </label>
+
+                          <div class="tooltip-container box-shadow">
+                                <h4>Título</h4>
+                                <div class="tooltip-content">
+                                      Muestran información concisa para guiar al usuario en alguna experiencia.
+                                </div>
+                          </div>
+                        </div>
+                        <!-- ==================================================================================== TOOLTIP-->
+
+
+                    </div>
+
+                    <h2 id="uploader">📦 Uploader</h2>
+                    <div class="example p-4">
+                      <!-- ==================================================================================== UPLOADER-->
+                      <form action="" class="form-coppel loader">
+                        <label for="avatar" for="file" class="file"> Choose.. </label>
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+                        <input type="text" name="" value="" placeholder="File.png">
+                      </form>
+                      <!-- ==================================================================================== UPLOADER-->
+                    </div>
+
+
+
+                    <h2 id="progress">📦 ProgressBar</h2>
+                    <div class="example p-4">
+                       <!-- ==================================================================================== PROGRES BAR-->
+                        <div class="progressBar">
+                              <div class="groupBar">
+                                <div class="bar">  </div>
+                                <div class="progress" style="width:80%"></div>
+                              </div>
+                        </div>
+
+                      <!-- ==================================================================================== PROGRES BAR-->
+
+                        <br>
+                        <hr>
+                        <br>
+                    <!-- ==================================================================================== PROGESS BAR PERCENT-->
+                        <div class="progressBar barPercent">
+                              <div class="groupBar">
+                                <div class="bar">  </div>
+                                <div class="progress" style="width:50%"></div>
+                              </div>
+                              <label for="" class="small text-center">60%</label>
+                        </div>
+                    <!-- ==================================================================================== PROGESS BAR PERCENT-->
+
+                    </div>
+
+                    <h2 id="avat">📦 Avatar</h2>
+
+                    <div class="example p-4">
+
+                      <!-- ==================================================================================== AVATARES-->
+                      <div class="avatar avatar-s"> <div class="avatar-name">  S</div> </div>
+                      <div class="avatar avatar-m"> <div class="avatar-name">  M</div> </div>
+                      <div class="avatar avatar-l"> <div class="avatar-name"> L</div> </div>
+                      <div class="avatar avatar-l" style="background:url('assets/prom.png');background-size:cover;color:transparent;"> . </div>
+                      <!-- ==================================================================================== AVATARES-->
+
+
+                    </div>
+
+                    <h2 id="alert">📦 Alert</h2>
+                    <div class="example p-4">
+                        <!-- ==================================================================================== ALERT-->
+                        <div class="alert">
+                          <img src="assets/mensaje.svg">
+                          <small>Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.</small>
+                          <!-- <a href="#modal"><img src="assets/cross.svg"></a> -->
+                        </div>
+                        <!-- ==================================================================================== ALERT-->
+                    </div>
+
+                    <h2 id="range">📦 Range <div class="alert">NEW 🎉</div></h2>
+                    <div class="example p-4">
+                        <!-- ==================================================================================== ALERT-->
+                        <div class="c-range">
+                          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </div>
+                        <div class="d-flex justify-content-between">
+                          <label class="small">Mónto mínimo $1,000</label>
+                          <label class="small">Mónto máximo $5,000</label>
+                        </div>
+                        <!-- ==================================================================================== ALERT-->
+                    </div>
+
+                    <h2 id="tabs">📦 Tabs <div class="alert">NEW 🎉</div></h2>
+                    <div class="example p-4">
+                        <!-- ==================================================================================== ALERT-->
+                        <ul class="c-tabs">
+                          <li>Opción 1</li>
+                          <li>Opción 2</li>
+                          <li>Opción 3</li>
+                          <li>Opción 4</li>
+                        </ul> 
+                        <!-- ==================================================================================== ALERT-->
+                    </div>
+
+                    <h2 id="collapse">📦 Collapse <div class="alert">Trabajando</div></h2>
+                    <div class="example p-4">
+                        <!-- ==================================================================================== ALERT-->
+                          
+
+
+
+                        <!-- ==================================================================================== ALERT-->
+                    </div>
+
+                    <h2 id="table">📦 Table <div class="alert">NEW 🎉</div></h2>
+                    <div class="example p-4">
+                        <!-- ==================================================================================== ALERT-->
+                        <table class="full zebra-striped" cellspacing="0" cellpadding="0">
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>First Name</th>
+                              <th>Last Name</th>
+                              <th>Language</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>Some</td>
+                              <td>One</td>
+                              <td>English</td>
+                            </tr>
+                            <tr>
+                              <td>2</td>
+                              <td>Joe</td>
+                              <td>Sixpack</td>
+                              <td>English</td>
+                            </tr>
+                            <tr>
+                              <td>3</td>
+                              <td>Stu</td>
+                              <td>Dent</td>
+                              <td>Code</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!-- ==================================================================================== ALERT-->
+                    </div>
+
+                    <br>
+
+
+                    <h1 id="card">.Card</h1>
+                    <hr>
+                    <p>Para utilizar la estructura de card, bastara con ocupar <span class="bold">.card</span> junto con un div y así tener disponible este tipo de componente</p>
+
+                    <div class="example p-4">
+                        <div class="card "> <p>Soy un card</p> </div>
+                    </div>
+
+                    
+
+                    <br>
+
+
+
+                    <h1 id="column">Sistema de columnas</h1>
+                    <hr>
+                    <p>Integrado a este paquete encontraras el sistema de columnas de bootstrap sientete libre de incluirlo o quitarlo del coppelize.css según tus necesidades. Si es que decides dejarlo, puedes utilizar col-md, col-lg, container y todo el poder del grid de este framework. Para leer más sobre su uso puedes <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">visitar su documentación</a></p>
+                   
+                    <br>
+                    <h1 id="column">Sistema de utilidades</h1>
+                    <hr>
+                    <p>Integrado a este paquete encontraras el sistema de utilidades y modificadores tales como p-1, m-1,  <a href="https://getbootstrap.com/docs/4.0/utilities/borders/" target="_blank">visitar su documentación</a></p>
+                    
+                    <br>
+                    <hr>
+                    <hr>
+                    <hr>
+                    
+                    <small> <br>Si tienes alguna duda o sugerencia nos puedes contactar a <a href="mailto:raul.gonzalezg@coppel.com">raul.gonzalezg@coppel.com</a> para mayor support. <br><br> 🏀 by Coppel Design Standards - Grupo Coppel ®</small>
+                    <br>
+                    <br>
+                    <small><i>Esta librería antes se llamo Coppelize.css pero ahora es Coltrane.css</i></small>
+
+              </div>
+        </div>
+
+    </div>
+
+
+  </body>
+</html>
