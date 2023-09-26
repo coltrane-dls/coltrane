@@ -1,878 +1,1138 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title></title>
-     <link rel="stylesheet" href="coltrane.min.css">
-     <!-- <link rel="stylesheet" href="coppelize.css"> -->
-     <style media="screen"> .example{background-color: aliceblue;overflow-x: scroll;border-radius: 8px;}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coltrane 2</title>
+    <link rel="stylesheet" href="coltrane.min.css">
   </head>
-  <body class="background" style="margin-bottom:30px;">
-
-    <div class="container ">
-      <br>
-      <br>
-        <div class="row">
-              <div class="col-md-3">  </div>
-              <div class="col-lg-5 col-sm-12 c-card">
-
-                    <br>
-                    <br>
-                    <div class=" text-center">
-                      <div class="display"> 🏀 Coltrane.css</div>
-                      <small class="neutral">v.Beta 1.7.0</small>
-                      <small class="neutral"> - Última actualización: 1  Febrero 2023</small>
-                      <small class="neutral"> - Antes coppelize.css</small>
-                    </div>
-                    <br>
-
-                    <div class="text-center small">
-
-                        <a href="#colores">Colores</a> ·
-                        <a href="#tipo">Tipografias</a> ·
-                        <a href="#space">Espaciados</a>
-                        <br>
-                        <br>
-                        <a href="#stepper">Stepper</a> ·
-                        <a href="#btn">Botones</a> ·
-                        <a href="#check">Checkbox</a> ·
-                        <a href="#inputs">Inputs</a> ·
-                        <a href="#modal">Modal</a> ·
-                        <a href="#tooltip">Tooltip</a> ·
-                        <a href="#uploader">Uploader</a> ·
-                        <a href="#progressBar">ProgressBar</a> ·
-                        <a href="#avat">Avatar</a> ·
-                        <a href="#alert">Alert</a>
-
-                        <br>
-                        <br>
-                        <a href="#card">Card</a> |
-                        <a href="#columns">Sistema de columnas</a>
-
-                     </div>
-
-                    <br>
-                    <h1>👋 Hola Coder.</h1>
-                    <p>
-                      Bienvenido a Coltrane.css, esta hoja de estilo tiene el objetivo de ayudarte en el <span class="bold primary">  desarrollo de tu aplicación, página o componente</span>. Siendo agnostivo a cualquier framework y trabajando de forma colaborativa con otros sistemas.
-                    </p>
-
-                    <br>
-
-                    <h1>Instalación</h1>
-                    <p>Para la instalación de esta librería puedes utilizar la etiqueta link dento de <span class="bold">< head ></span> para utilizarlo en tu HTML</p>
-                    <form action="" class="form-coppel">
-                      <textarea id="w3review" name="w3review" rows="1" cols="50" style="background-color: #1f1f22;color: yellow;"><link type="text/css" href="coltrane.min.css"></textarea>
-                    </form>
-                    <br><br>
-                    <div class="text-center">
-                      <button type="submit" class="primary-button m-3" onclick="window.open('Coltrane.css v.1.7.0.zip')">Descargar última versión 1.7.0</button><br>  
-                      <small>
-                        Otras versiones:<a href="" onclick="window.open('Coltrane.css v.1.6.0.zip')" class="c-link">versión 1.6</a>,<a href="" onclick="window.open('Coltrane.css v.1.5.0.zip')" class="c-link">versión 1.5</a>, <a href="" onclick="window.open('Coltrane.css v.1.4.0.zip')" class="c-link">versión 1.4</a> ,
-                      <a href="" onclick="window.open('Coltrane.css v.1.3.0.zip')" class="c-link">versión 1.3</a> ,
-                      <a href="" onclick="window.open('Coppelize_BETA_1.2.zip')"class="c-link">versión 1.2</a>,
-                      <a href="" onclick="window.open('Coppelize_BETA_1.1.zip')" class="c-link">versión 1.1</a> .
-                      </small>
-                      
-
-                    </div>
-                    <br>
-                    <br>
-                    <br>
-                    <h1>Tokens</h1>
-                    <p>Coltrane esta conformado de algunas variables fundamentales, las cuales contruyen todos los componentes, pantallas y elmentos del front, estos son:</p>
-                    <br>
-                    <br>
-
-
-
-
-                      <h2 id="spaces">Espaciado</h2>
-                      <hr>
-                      Para utilizar las unidades de espaciado puedes ocupar las variables de css:
-                      <div class="example p-4">
-                        <ul>
-                          <li>var(--s-unit) = 8px</li>
-                          <li>var(--s-unit-2) = 16px</li>
-                          <li>var(--s-unit-3) = 24px</li>
-                          <li>var(--s-unit-4) = 32px</li>
-                          <li>var(--s-unit-5) = 40px</li>
-
-                        </ul>
-                      </div>
-                      <br>
-
-                      <br>
-                      <br>
-                      <h2 id="tipo">Tipografias</h2>
-                      <hr>
-                      <div class="example p-4">
-
-                        <div class="display">  Soy un .Display</div>
-                        <h1>Soy un H1</h1>
-                        <h2>Soy un H2</h2>
-                        <h3>Soy un H3</h3>
-                        <h4>Soy un H4</h4>
-
-                        <p> Soy un parrafo </p>
-
-                        <small>Soy un small</small>
-                        <br>
-                        <div class="caption">
-                                Soy un caption
-                        </div>
-
-                      </div>
-
-
-                      <br>
-                      <br>
-                      <br>
-                      <h2 id="colores">Colores</h2>
-                      <hr>
-
-
-                      <h3>Clases:</h3>
-                      <div class="example p-4">
-                        <div class="primary">  .primary</div>
-                        <div class="complementary">  .complementary</div>
-                        <div class="white primary-bg">  .white</div>
-                        <div class="neutral">  .neutral</div>
-                        <div class="black">  .black</div>
-                        <div class="error">  .error</div>
-                        <div class="success">  .success</div>
-                        <div class="warning">  .warning</div>
-                        <div class="info">  .info</div>
-                        <div class="sales">  .sales</div>
-                      </div>
-                      <br>
-                      <h3>Background:</h3>
-
-                      <div class="example p-4">
-                        <div class="primary-bg">  .primary-bg</div>
-                        <div class="complementary-bg">  .complementary-bg</div>
-                        <div class="primary white-bg">  .white-bg</div>
-                        <div class="neutral-bg">  .neutral-bg</div>
-                        <div class="white black-bg">  .black-bg</div>
-                        <div class="error-bg">  .error-bg</div>
-                        <div class="success-bg">  .success-bg</div>
-                        <div class="warning-bg">  .warning-bg</div>
-                        <div class="info-bg">  .info-bg</div>
-                        <div class="sales-bg">  .sales-bg</div>
-                      </div>
-
-
-
-                    <br>
-                    <!-- ========================================================= -->
-
-                    <h1>Componentes</h1>
-
-                    <hr>
-
-
-                    <h2 id="stepper">📦 Stepper</h2>
-
-                    <div class="example p-5">
-
-                    <!-- ==================================================================================== STEPER-->
-                      <div class="stepper">
-                            <div class="stepper-group">
-                              <div class="stepper-step primary-bg ">
-                                <div class="checked-step"></div>
-                              </div>
-                              <div class="stepper-text">
-                                <label for="">Título</label>
-                                <label class="small">Subtitle</label>
-                              </div>
-                              <div class="stepper-line"></div>
-                            </div>
-
-                            <div class="stepper-group">
-                                <div class="stepper-step neutral-bg pencil">1</div>
-                                <div class="stepper-text">
-                                  <label for="">Título</label>
-                                  <label class="small">Subtitle</label>
-                                </div>
-                                <div class="stepper-line"></div>
-                            </div>
-
-                            <div class="stepper-group">
-                                <div class="stepper-step neutral-bg pencil">2</div>
-                                <div class="stepper-text">
-                                  <label for="">Título</label>
-                                </div>
-                            </div>
-                      </div>
-                    <!-- ==================================================================================== STEPER-->
-                    </div>
-
-                    
-                    
-                    <h2 id="navbar">📦 Navbar</h2><!--  NAVBAR ************************************-->
-
-                    <div class="example p-5">
-
-                    <!-- ==================================================================================== CODE-->
-                     <nav class="c-navbar">
-                        <div class="brand"><h4>coppel-design.com</h4></div>
-                        <ul class="menu">
-                          <li><a href="#">Brand</a></li>
-                          <li><a href="#">Navbar</a></li>
-                          <li><a href="#">Components</a></li>
-                        </ul>
-                     </nav>
-                    <!-- ==================================================================================== CODE-->
-
-
-                    </div> <!--  NAVBAR ************************************-->
-
-
-
-
-
-                    <h2 id="btn">📦 Button <div class="alert">NEW 🎉</div></h2>
-                    <h3 id="btn">Primary</h3>
-                    <div class="example p-4">
-                      <button type="button" name="button" class="primary-button m-4">
-                        Default Primary Button
-                      </button>
-                      <br>
-                      <button type="button" name="button" class="primary-button large m-4">
-                        ".large" Primary Button
-                      </button>
-                      <br>
-                      <button type="button" name="button" class="primary-button m-4 responsive">
-                        ".responsive" - Primary Button
-                      </button>
-                    </div>
-                    <h3 id="btn">Secondary</h3>
-                    <div class="example">
-                      <button type="button" name="button" class="secondary-button m-4">
-                              Secondary Button
-                      </button>
-
-
-                      <button type="button" name="button" class="icon-button m-4 ">
-                              <img src="assets/icon.svg">
-                      </button>
-                    </div>
-                    <h3 id="btn">Link</h3>
-                    <div class="example p-4">
-                      
-                      <a href="" class="c-link">
-                        Link >
-                      </a>
-                    </div>
-                    
-
-                    
-
-                   
-
-
-
-                    <h2 id="check">📦 Checkbox</h2>
-                    <div class="example p-5">
-                      <!-- ==================================================================================== CHECKBOX-->
-
-                        <input type="checkbox" name="" value="">
-                        <label for="">Checkbox</label>
-
-                      <!-- ==================================================================================== CHECKBOX-->
-                    </div>
-
-
-
-                    <h2 id="upload">📦 Upload <div class="alert">NEW 🎉</div></h2>
-                    <div class="example p-5">
-                      <!-- ==================================================================================== CHECKBOX-->
-
-                        <div class="form-coppel">
-                             <label for="images" class="c-upload">
-                              <h3 class="c-upload-title">Drop files here</h3>
-                              o
-                              <button  type="submit" class="primary-button m-3 no-click">Subir archivo</button>
-                              <input type="file" id="images" accept="image/*" required>
-                            </label>
-                        </div>
-
-                
-                      <!-- ==================================================================================== CHECKBOX-->
-                    </div>
-
-
-
-
-
-
-                    <h2 id="inputs">📦 Input</h2>
-                    <div class="example p-4">
-                      <!-- ==================================================================================== INPUTS-->
-                          <form class="form-coppel" action="index.html" method="post" >
-                            <label  for="">Nombre <span class="small neutral">  (🥑 Regular input)</span></label>
-                            <input type="text" name="" value="" placeholder="María Gonzalez ejm.">
-                            <label for="" class="small">Un mensaje al usuario 🙃</label>
-                          </form>
-
-                          <br>
-                          <hr>
-                          <br>
-
-                          <form class="form-coppel" action="index.html" method="post" >
-                            <label  for="">Nombre <span class="small neutral">  (🔥 Error input)</span></label>
-                            <input class="error-border" type="text" name="" value="" placeholder="María Gonzalez ejm.">
-                            <label for="" class="small error">Un mensaje al usuario 🙃</label>
-                          </form>
-
-                          <br>
-                          <hr>
-                          <br>
-
-                          <form class="form-coppel" action="index.html" method="post" >
-                            <label  for="">Nombre <span class="small neutral">  (✅ Success input)</span></label>
-                            <input class="success-border" type="text" name="" value="" placeholder="María Gonzalez ejm.">
-                            <label for="" class="small success">Un mensaje al usuario 🙃</label>
-                          </form>
-
-
-
-                          <br>
-                          <hr>
-                          <br>
-
-                          <form class="form-coppel" action="index.html" method="post" >
-                            <label  for="" class="neutral">Nombre <span class="small neutral">  (✅ Disabled input)</span></label>
-                            <input class="" type="text" name="" value="" placeholder="María Gonzalez ejm." disabled>
-                            <label for="" class="small neutral">Un mensaje al usuario 🙃</label>
-                          </form>
-
-                          <br>
-                          <hr>
-                          <br>
-
-                          <form class="form-coppel" action="index.html" method="post" disabled>
-                            <label  for="" >Nombre <span class="small neutral">  (📦 Dropdown input)</span></label>
-                            <div class="select ">
-                                        <input type="radio" name="option" >
-                                        <i class="toggle icon icon-arrow-down"></i>
-                                        <i class="toggle icon icon-arrow-up"></i>
-                                        <span class="placeholder">Selecciona una opción</span>
-                                        <label class="option">
-                                            <input type="radio" name="option">
-                                            <span class="title animated fadeIn">Speedometer</span>
-                                        </label>
-                                        <label class="option">
-                                            <input type="radio" name="option">
-                                            <span class="title animated fadeIn">Fire</span>
-                                        </label>
-                                        <label class="option">
-                                            <input type="radio" name="option" disabled>
-                                            <span class="title animated fadeIn"></i>Handbag</span>
-                                        </label>
-                                        <label class="option">
-                                            <input type="radio" name="option">
-                                            <span class="title animated fadeIn"></i>Badge</span>
-                                        </label>
-                                </div>
-                            <label for="" class="small neutral">Un mensaje al usuario 🙃</label>
-                          </form>
-
-
-                          <br>
-                          <hr>
-                          <br>
-
-                          <form class="form-coppel" action="index.html" method="post" disabled>
-                            <label  for="" >Nombre <span class="small neutral">  (📦 🔥Dropdown input DISABLED)</span></label>
-                            <div class="select ">
-                                        <input type="radio" name="option" disabled>
-                                        <!-- <i class="toggle icon icon-arrow-down"></i>
-                                        <i class="toggle icon icon-arrow-up"></i> -->
-                                        <span class="placeholder">Selecciona una opción</span>
-                                        <label class="option">
-                                            <input type="radio" name="option">
-                                            <span class="title animated fadeIn">Speedometer</span>
-                                        </label>
-                                        <label class="option">
-                                            <input type="radio" name="option">
-                                            <span class="title animated fadeIn">Fire</span>
-                                        </label>
-                                        <label class="option">
-                                            <input type="radio" name="option" disabled>
-                                            <span class="title animated fadeIn"></i>Handbag</span>
-                                        </label>
-                                        <label class="option">
-                                            <input type="radio" name="option">
-                                            <span class="title animated fadeIn"></i>Badge</span>
-                                        </label>
-                                </div>
-                            <label for="" class="small neutral">Un mensaje al usuario 🙃</label>
-                          </form>
-
-
-                          <br>
-                          <hr>
-                          <br>
-
-                          <form action="" class="form-coppel">
-                            <label  for="" >Fecha <span class="small neutral">  (📦 🔥 Date input)</span></label>
-                            <input type="date" name="fecha">
-                            <label for="" class="small neutral">Un mensaje al usuario 🙃</label>
-                          </form>
-
-
-
-                      <!-- ==================================================================================== INPUTS-->
-
-
-                    </div>
-                    <h3>Tamaños de input </h3>
-                    <div class="example p-4">
-
-                      <form class="form-coppel" action="index.html" method="post" >
-                        <label  for="">Nombre <span class="small neutral">  (🥑 Small input)</span></label>
-                        <input class="c-small" type="text" name="" value="" placeholder="María Gonzalez ejm.">
-                        <label for="" class="small">Un mensaje al usuario 🙃</label>
-                      </form>
-
-                      <br>
-                      <br>
-
-                      <form class="form-coppel" action="index.html" method="post" >
-                        <label  for="">Nombre <span class="small neutral">  (🥑 Medium /Regular input)</span></label>
-                        <input class="c-medium" type="text" name="" value="" placeholder="María Gonzalez ejm.">
-                        <label for="" class="small">Un mensaje al usuario 🙃</label>
-                      </form>
-
-                      <br>
-                      <br>
-
-                      <form class="form-coppel" action="index.html" method="post" >
-                        <label  for="">Nombre <span class="small neutral">  (🥑 Large input)</span></label>
-                        <input class="c-large" type="text" name="" value="" placeholder="María Gonzalez ejm.">
-                        <label for="" class="small">Un mensaje al usuario 🙃</label>
-                      </form>
-                      <br>
-                      <br>
-                      <form class="form-coppel" action="index.html" method="post" >
-                        <label  for="">Nombre <span class="small neutral">  (🥑 XLarge input)</span></label>
-                        <input class="c-xlarge" type="text" name="" value="" placeholder="María Gonzalez ejm.">
-                        <label for="" class="small">Un mensaje al usuario 🙃</label>
-                      </form>
-
-                    </div>
-
-                    <h2 id="modal">📦 Modal</h2>
-
-                    <div class="example p-5">
-
-                        <!-- ==================================================================================== MODALBOX-->
-                        <div class="modalbox">
-                            <a href="#modal"><img src="assets/cross.svg"></a>
-                            <h1>Título</h1>
-                            <p>La app que seleccionaste ya no se mostrará en tu pantalla de inicio.</p>
-                            <p> Si deseas verla de nuevo en el inicio ve a la sección deMis Aplicación y márcala como destacada. </p>
-                            <button type="button" name="button" class="primary-button mb-3"> De acuerdo, quitar</button>
-                            <button type="button" name="button" class="secondary-button "> Cancelar</button>
-                        </div>
-                        <!-- ==================================================================================== MODALBOX-->
-
-                    </div>
-
-                    <h2 id="modal">📦 Breadcrumb </h2> 
-
-                    <div class="example p-5">
-
-                        <!-- ==================================================================================== MODALBOX-->
-                        <ul class="c-breadcrumb">
-                          <li><a href="#">Opción 1</a> </li>
-                          <li><a href="#">Opción 2</a> </li>
-                          <li><a href="#">Opción 3</a> </li>
-                        </ul>
-                        <!-- ==================================================================================== MODALBOX-->
-
-                    </div>
-
-                    <h2 id="tooltip">📦 Tooltip</h2>
-
-                    <div class="example p-4">
-
-
-                        <!-- ==================================================================================== TOOLTIP-->
-                        <div class="tooltip ">
-                          <label>Holi 👋 Soy un tooltip, HOVER me ! </label>
-
-                          <div class="tooltip-container box-shadow">
-                                <h4>Título</h4>
-                                <div class="tooltip-content">
-                                      Muestran información concisa para guiar al usuario en alguna experiencia.
-                                </div>
-                          </div>
-                        </div>
-                        <!-- ==================================================================================== TOOLTIP-->
-
-
-                    </div>
-
-                    <h2 id="uploader">📦 Uploader</h2>
-                    <div class="example p-4">
-                      <!-- ==================================================================================== UPLOADER-->
-                      <form action="" class="form-coppel loader">
-                        <label for="avatar" for="file" class="file"> Choose.. </label>
-                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-                        <input type="text" name="" value="" placeholder="File.png">
-                      </form>
-                      <!-- ==================================================================================== UPLOADER-->
-                    </div>
-
-
-
-                    <h2 id="c-header">📦 Header</h2>
-                    <div class="example p-4">
-                      <h2>Header </h2>
-                      <!-- ==================================================================================== PROGRES BAR-->
-
-                      <div class="c-header-background background-bg b-center hv-25" style="background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/07/mountain-wallpaper-01.jpg');">
-                      
-                      </div>
-
-                      <!-- Some utilities -->
-                      <!-- Height: .vh-25, .vh-50, .vh-75, .vh-100 -->
-                      <!-- Position&repeat: .no-repeat-img, .img-cover -->
-
-
-                      <!-- ==================================================================================== PROGRES BAR-->
-                      <h2>Header with content</h2>
-
-                      <div class="c-header-background background-bg b-center hv-50 no-repeat-img img-cover" style="background-image: url('https://wallpaperboat.com/wp-content/uploads/2019/07/mountain-wallpaper-01.jpg');">
-                        <div class="container-sm h-100 ">
-                          <div class="row h-100 justify-content-center align-items-center">
-                            <div class="col-sm-6">
-                              <h3 class="primary"> Secciones</h3>
-                              <p class="white"> Hola soy un contenido </p>
-                            </div>
-                            <div class="col-sm-6">
-                              <h3 class="primary"> Secciones</h3>
-                              <p class="white"> Hola soy un contenido </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    
-                    
-                    </div>
-
-                    <h2 id="footer">📦 Footer</h2>
-                    <div class="example p-4">
-                      <!-- ==================================================================================== PROGRES BAR-->
-                       
-                      <div class="c-footer white-bg">
-                        <div class="text-center pb-4"><a href="#">Ir arriba</a></div>
-                        <div class="container">
-                          <div class="row ">
-                            
-                            <div class="col-lg-6">
-                              <h4>Menú</h4>
-                              <ul>
-                                <li> Inicio</li>
-                                <li> Developers Coppel</li>
-                                <li> Customer Experience</li>
-                              </ul>
-                            </div>
-                            <div class="col-lg-6 "> <h2>👋 </h2> <br> Visualiza el footer completo  <a href="#footer-site">al final de esta página. </a></div>
-                            
-                          </div>
-                        </div>
-                      </div>
-
-                      <!-- ==================================================================================== PROGRES BAR-->
-                    </div>
-
-
-
-
-
-
-                    <h2 id="progress">📦 ProgressBar</h2>
-                    <div class="example p-4">
-                       <!-- ==================================================================================== PROGRES BAR-->
-                        <div class="progressBar">
-                              <div class="groupBar">
-                                <div class="bar">  </div>
-                                <div class="progress" style="width:80%"></div>
-                              </div>
-                        </div>
-
-                      <!-- ==================================================================================== PROGRES BAR-->
-
-                        <br>
-                        <hr>
-                        <br>
-                    <!-- ==================================================================================== PROGESS BAR PERCENT-->
-                        <div class="progressBar barPercent">
-                              <div class="groupBar">
-                                <div class="bar">  </div>
-                                <div class="progress" style="width:50%"></div>
-                              </div>
-                              <label for="" class="small text-center">60%</label>
-                        </div>
-                    <!-- ==================================================================================== PROGESS BAR PERCENT-->
-
-                    </div>
-
-                    <h2 id="avat">📦 Avatar</h2>
-
-                    <div class="example p-4">
-
-                      <!-- ==================================================================================== AVATARES-->
-                      <div class="avatar avatar-s"> <div class="avatar-name">  S</div> </div>
-                      <div class="avatar avatar-m"> <div class="avatar-name">  M</div> </div>
-                      <div class="avatar avatar-l"> <div class="avatar-name"> L</div> </div>
-                      <div class="avatar avatar-l" style="background:url('assets/prom.png');background-size:cover;color:transparent;"> . </div>
-                      <!-- ==================================================================================== AVATARES-->
-
-
-                    </div>
-
-                    <h2 id="alert">📦 Alert</h2>
-                    <div class="example p-4">
-                        <!-- ==================================================================================== ALERT-->
-                        <div class="alert">
-                          <img src="assets/mensaje.svg">
-                          <small>Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.</small>
-                          <!-- <a href="#modal"><img src="assets/cross.svg"></a> -->
-                        </div>
-                        <!-- ==================================================================================== ALERT-->
-                    </div>
-
-                    <h2 id="range">📦 Range </h2>
-                    <div class="example p-4">
-                        <!-- ==================================================================================== ALERT-->
-                        <div class="c-range">
-                          <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-                        </div>
-                        <div class="d-flex justify-content-between">
-                          <label class="small">Mónto mínimo $1,000</label>
-                          <label class="small">Mónto máximo $5,000</label>
-                        </div>
-                        <!-- ==================================================================================== ALERT-->
-                    </div>
-
-                    <h2 id="tabs">📦 Tabs </h2>
-                    <div class="example p-4">
-                        <!-- ==================================================================================== ALERT-->
-                        <ul class="c-tabs">
-                          <li>Opción 1</li>
-                          <li>Opción 2</li>
-                          <li>Opción 3</li>
-                          <li>Opción 4</li>
-                        </ul> 
-                        <!-- ==================================================================================== ALERT-->
-                    </div>
-
-                    <h2 id="collapse">📦 Collapse </h2>
-                    <div class="example p-4">
-                        <!-- ==================================================================================== ALERT-->
-                          <div class="c-collapse-group">
-                            <details class="c-collapse">
-                              <summary><h3>Dudas fiancieras</h3> <img src="assets/chevron_down.svg" alt=""></summary>
-                              <div class="c-c-content">
-                                <h4>Title</h4>
-                                <p>This is some text and <i>these words are italic</i></p>
-                              </div>
-                            </details>
-                            <details class="c-collapse">
-                              <summary><h3>Créditos</h3> <img src="assets/chevron_down.svg" alt=""></summary>
-                              <div class="c-c-content">
-                                <h4>Title</h4>
-                                <p>This is some text and <i>these words are italic</i></p>
-                              </div>
-                            </details>
-                            <details class="c-collapse">
-                              <summary><h3>Click to expand</h3> <img src="assets/chevron_down.svg" alt=""></summary>
-                              <div class="c-c-content">
-                                <h4>Title</h4>
-                                <p>This is some text and <i>these words are italic</i></p>
-                              </div>
-                            </details>
-                          </div>
-                     
-
-
-
-                        <!-- ==================================================================================== ALERT-->
-                    </div>
-
-                    <h2 id="table">📦 Table </h2>
-                    <div class="example p-4">
-                        <!-- ==================================================================================== ALERT-->
-                        <table class="full zebra-striped" cellspacing="0" cellpadding="0">
-                          <thead>
-                            <tr>
-                              <th>#</th>
-                              <th>First Name</th>
-                              <th>Last Name</th>
-                              <th>Language</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>1</td>
-                              <td>Some</td>
-                              <td>One</td>
-                              <td>English</td>
-                            </tr>
-                            <tr>
-                              <td>2</td>
-                              <td>Joe</td>
-                              <td>Sixpack</td>
-                              <td>English</td>
-                            </tr>
-                            <tr>
-                              <td>3</td>
-                              <td>Stu</td>
-                              <td>Dent</td>
-                              <td>Code</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <!-- ==================================================================================== ALERT-->
-                    </div>
-
-                    <br>
-                    <h2 id="list">📦 List <div class="alert">NEW 🎉</div></h2>
-                    <div class="example p-4">
-                        <!-- ==================================================================================== ALERT-->
-                        <div class="c-list">
-                          <div class="c-list-item">
-                            <span> 
-                              🏅
-                              Febrero
-                            </span>
-                            ✅
-                          </div>
-                          <div class="c-list-item">
-                            <span> 
-                              🏅
-                              Marzo
-                            </span>
-                            ✅
-                          </div>
-                          <div class="c-list-item">
-                            <span> 
-                              🏅
-                              Abril
-                            </span>
-                            ✅
-                          </div>
-                        </div>
-                        <!-- ==================================================================================== ALERT-->
-                    </div>
-
-                    <br>
-
-
-                    <h1 id="card">.Card</h1>
-                    <hr>
-                    <p>Para utilizar la estructura de card, bastara con ocupar <span class="bold">.card</span> junto con un div y así tener disponible este tipo de componente</p>
-
-                    <div class="example p-4">
-                        <div class="c-card "> <p>Soy un card</p> </div>
-                    </div>
-                    
-                    <h2>Card item</h2>
-
-                    <div class="example p-4">
-                      <!-- ==================================================================================== card item-->
-                      <div class="c-card item ">
-                        
-                        <div class="img-content neutral-bg">
-                          <img src="https://cdn1.coppel.com/images/catalog/pm/6309933-1.jpg" alt="">
-                        </div>
-
-
-                        <div class="content m-3">
-                          <h4>Título</h4>
-                          <p>Contenido</p>
-                          <a href="#">Link </a>
-                        </div>
-                      </div>  
-                      <!-- ==================================================================================== card item-->
-                      
-                    </div>
-
-                   
-                    <br>
-
-                    
-                    
-
-                    <h1 id="column">Sistema de columnas</h1>
-                    <hr>
-                    <p>Integrado a este paquete encontraras el sistema de columnas de bootstrap sientete libre de incluirlo o quitarlo del coppelize.css según tus necesidades. Si es que decides dejarlo, puedes utilizar col-md, col-lg, container y todo el poder del grid de este framework. Para leer más sobre su uso puedes <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">visitar su documentación</a></p>
-                   
-                    <br>
-                    <h1 id="column">Sistema de utilidades</h1>
-                    <hr>
-                    <p>Integrado a este paquete encontraras el sistema de utilidades y modificadores tales como p-1, m-1,  <a href="https://getbootstrap.com/docs/4.0/utilities/borders/" target="_blank">visitar su documentación</a></p>
-                    
-                    <br>
-                    <hr>
-                    <hr>
-                    <hr>
-                    
-                    <small> <br>Si tienes alguna duda o sugerencia nos puedes contactar a <a href="mailto:raul.gonzalezg@coppel.com">raul.gonzalezg@coppel.com</a> para mayor support. <br><br> 🏀 by Coppel Design Standards - Grupo Coppel ®</small>
-                    <br>
-                    <br>
-                    <small><i>Esta librería antes se llamo Coppelize.css pero ahora es Coltrane.css</i></small>
-
+  <body class="background" style="margin:0px"><br><br>
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12">
+          <div class="custom_side">
+            <div class="c-card">
+              <div class="text-center">
+                <h1>🏀</h1>
+                <h1>Coltrane CSS</h1><small class="neutral">Versión 2.0</small><br><br><small class="neutral">Actualizado el 13 Sept 2023</small><br><small class="neutral">Antes coppelize.css</small>
               </div>
+              <div class="text-center caption">
+                <button class="primary-button m-3" type="submit" onclick="window.open('Coltrane.css v.2.0.zip')">Descargar</button><br><small>Otras versiones: <br><a class="c-link" href onclick="window.open('Coltrane.css v.1.7.0.zip')">1.7</a>,<a class="c-link" href onclick="window.open('Coltrane.css v.1.6.0.zip')">1.6</a>,<a class="c-link" href onclick="window.open('Coltrane.css v.1.5.0.zip')">1.5</a>, <a class="c-link" href onclick="window.open('Coltrane.css v.1.4.0.zip')">1.4</a> ,<a class="c-link" href onclick="window.open('Coltrane.css v.1.3.0.zip')">1.3</a> ,<a class="c-link" href onclick="window.open('Coppelize_BETA_1.2.zip')">1.2</a>,<a class="c-link" href onclick="window.open('Coppelize_BETA_1.1.zip')">1.1</a></small>
+              </div><br>
+              <ul class="menu">
+                <li> <a class="link" href="#button">Button</a></li>
+                <li> <a class="link" href="#avatar">Avatar</a></li>
+                <li> <a class="link" href="#alert">Alert</a></li>
+                <li> <a class="link" href="#breadcrumb">Breadcrumb</a></li>
+                <li> <a class="link" href="#dropdown">Dropdown</a></li>
+                <li> <a class="link" href="#navbar">Navbar</a></li>
+                <li> <a class="link" href="#modal">Modal</a></li>
+                <li> <a class="link" href="#stepper">Stepper</a></li>
+                <li> <a class="link" href="#tabs">Tabs</a></li>
+                <li> <a class="link" href="#tooltip">Tooltip</a></li>
+                <li> <a class="link" href="#card">Card</a></li>
+                <li> <a class="link" href="#collapse">Collapse</a></li>
+                <li> <a class="link" href="#footer">Footer</a></li>
+                <li> <a class="link" href="#inputs">Input</a></li>
+                <li> <a class="link" href="#list">List</a></li>
+                <li> <a class="link" href="#table">Table</a></li>
+                <li> <a class="link" href="#tabs">Tabs</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="col-lg-8 col-sm-12">
+          <div class="c-card">
+            <div class="display">Hola Coder</div>
+            <p>Bienvenido a Coltrane.css, esta hoja de estilo tiene el objetivo de ayudarte en el desarrollo de tu aplicación, página o componente. Siendo agnostivo a cualquier framework y trabajando de forma colaborativa con otros sistemas.</p><br>
+            <hr><br>
+            <h1>Instalación</h1>
+            <p>Para la instalación de esta librería puedes utilizar la etiqueta link dento de <span class="bold">head</span> para utilizarlo en tu HTML</p>
+            <pre class="example_code">  <code>&lt;link type=&quot;text/css&quot; href=&quot;coltrane.min.css&quot;&gt;</code></pre><br>
+            <h1>Variables de diseño 
+              <div class="caption">Tambien conocidas como "tokens"</div>
+            </h1>
+            <p>Coltrane esta conformado de algunas variables fundamentales, las cuales contruyen todos los componentes, pantallas y elmentos del front, estos son:</p>
+            <div class="d-flex">
+              <div class="col-md-12">
+                <pre class="example_code"> <code>:root{
 
+  /* ------------------------------------------------------------------ Tokens V.2   */
+
+    
+  /* ------------------------ Interactive colors */
+  --primary:#006FB9;       
+  --primary-hover:#145B97;  
+  --primary-press:#194B7B; 
+
+  /* ------------------------ Brand colors */
+  --bancoppel:#FFF; 
+  --coppel:#FFDD35;
+  --coppel-max:#753CBD;
+  --afore:#006FB9;
+
+
+  /* ------------------------ Text colors */
+  --text:#1B1A16;
+  --text-soft:#717171;
+  --text-neutral:#BDBDBD;
+
+  /* ------------------------ Border colors */      
+  --border-soft:#717171;
+  --border-neutral:#D9E3F2;
+  
+  /* ------------------------ Background colors */
+  --background:#F1F4FA;
+  --background-soft:#FAFBFC;
+  --background-office:#D9E3F2;
+  --background-box:#FFFFFF;
+
+  /* ------------------------ Semantic colors -- Semantic colors backgrounds*/ 
+  --error:#BA4B44;        --error-bg:#FFF0EF; 
+  --success:#2E8241;       --success-bg:#E5FFEB; 
+  --warning:#AB5C00;       --warning-bg:#FFF4E8; 
+  --info:#0076A9;          --info-bg:#E4F7FF; 
+  --sales:#D3273E;
+    
+  /* ------------------------Fonts */
+  --display:48px;
+  --h1:36px;
+  --h2:28px;
+  --h3:24px;
+  --h4:20px;
+  --body:16px;
+  --small:14px;
+  --caption:12px;
+  
+  /* ----------------------Space Unit */
+  
+  --s-unit:8px;
+  --s-unit-2:16px;
+  --s-unit-3:24px;
+  --s-unit-4:32px;
+  --s-unit-5:40px;
+  
+  /* --------------------Corner radius Unit */
+  
+  --rounded-none: 0px;
+  --rounded-sm: 8px;
+  --rounded-md: 16px;
+  --rounded-full: 999px;
+  
+  // ---------------------Shadow */
+  --shadow-default: 0px 6px 24px 0px rgba(25, 75, 123, 0.04);
+  --shadow-hover: 0px 6px 24px 0px rgba(25, 75, 123, 0.12);
+  --shadow-primary: 0px 6px 24px 0px rgba(25, 75, 123, 0.18);
+  --shadow-floating: 0px 4px 16px rgba(25, 75, 123, 0.24), 0px 6px 24px rgba(25, 75, 123, 0.16);
+
+};
+
+</code></pre>
+              </div>
+            </div>
+            <h2 id="tipo">Tipografias</h2>
+            <p>Utiliza los tamaños que se adecuen a tu producto.</p>
+            <hr><br><br>
+            <div class="row"> 
+              <h3>Títulos</h3>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <div class="display">Soy un .display</div>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;div class=&quot;display&quot;&gt; 
+Soy un .Display 
+&lt;/div&gt; </code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <h1>Soy un h1</h1>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;h1&gt; 
+Soy un h1 
+&lt;/h1&gt; </code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <h2>Soy un h2</h2>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;h2&gt; 
+Soy un h2 
+&lt;/h2&gt; </code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <h3>Soy un h3</h3>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;h3&gt; 
+Soy un h3 
+&lt;/h3&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <h4>Soy un h4</h4>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;h4&gt; 
+Soy un h4 
+&lt;/h4&gt;</code></pre>
+                </div>
+              </div><br>
+            </div>
+            <h3>Contenido</h3>
+            <div class="row pb-4">
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> 
+                    <p>Soy un p</p>
+                  </div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;p&gt; 
+Soy un p 
+&lt;/p&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> <small>Soy un small</small></div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;small&gt; 
+Soy un small 
+&lt;/small&gt;</code></pre>
+                </div>
+              </div>
+              <div class="row pb-4">
+                <div class="col-md-6"> 
+                  <div class="example p-4"> <span class="caption">Soy un caption</span></div>
+                </div>
+                <div class="col-md-6"> 
+                  <pre class="example_code m-0"><code>&lt;span class=&quot;caption&quot;&gt; 
+Soy un caption 
+&lt;/span&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <hr>
+            <h1>Componentes</h1>
+            <div class="pt-4" id="button">
+              <div class="types mt-4">
+                <h2>📦 Button</h2><small>Arquetipo: Botón ·  Objetivo: Interacción</small>
+                <h3 id="btn">⏺ Primary</h3>
+                <div class="example top p-4">
+                  <button class="primary-button m-4" type="button" name="button">
+                    Default Primary Button
+                    
+                  </button><br>
+                  <button class="primary-button large m-4" type="button" name="button">
+                    ".large" Primary Button
+                    
+                  </button><br>
+                  <button class="primary-button m-4 responsive" type="button" name="button">".responsive" - Primary Button</button>
+                </div>
+                <pre class="example_code bottom m-0"><code>&lt;button class=&quot;primary-button m-4&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+Default Primary Button         
+&lt;/button&gt;
+
+&lt;button class=&quot;primary-button large m-4&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+&quot;.large&quot; Primary Button
+&lt;/button&gt;
+
+&lt;button class=&quot;primary-button m-4 responsive&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+ &quot;.responsive&quot; - Primary Button
+&lt;/button&gt;</code></pre>
+                <h3 id="btn">⏺ Secondary</h3>
+                <div class="example top">
+                  <button class="secondary-button m-4" type="button" name="button">
+                    Secondary Button
+                    
+                  </button>
+                  <button class="icon-button m-4" type="button" name="button"><img src="assets/icon.svg"></button>
+                </div>
+                <pre class="example_code bottom m-0"><code>&lt;button class=&quot;secondary-button m-4&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;
+Secondary Button
+&lt;/button&gt;
+
+&lt;button class=&quot;icon-button m-4&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;&lt;img src=&quot;assets/icon.svg&quot;&gt;&lt;/button&gt;</code></pre>
+                <h3 id="btn">⏺ Link</h3>
+                <div class="example top p-4"><a class="c-link" href>Link</a></div>
+                <pre class="example_code bottom bottom m-0"><code>&lt;a class=&quot;c-link&quot; href=&quot;&quot;&gt;Link&lt;/a&gt;</code></pre>
+              </div><br><br>
+            </div>
+            <div class="pt-4" id="alert">
+              <div class="types mt-4">
+                <h2>📦 Alert</h2>
+                <div class="example p-4 top">
+                  <!--  ==================================================================================== ALERT-->
+                  <div class="alert"><img src="assets/mensaje.svg"><small>Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.</small>
+                    <!--  <a href="#modal"><img src="assets/cross.svg"></a> -->
+                  </div>
+                  <!--  ==================================================================================== ALERT-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;alert&quot;&gt;
+  &lt;img src=&quot;assets/mensaje.svg&quot;&gt;
+  &lt;small&gt;Texto muy largo en una alerta inteligente que cambia de tamaño y estilo.&lt;/small&gt;
+  &lt;!--  &lt;a href=&quot;#modal&quot;&gt;&lt;img src=&quot;assets/cross.svg&quot;&gt;&lt;/a&gt; --&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="avatar">
+              <div class="types mt-4">
+                <h2>📦 Avatar</h2>
+                <div class="example p-4 top">
+                  <!--  ==================================================================================== AVATARES-->
+                  <div class="avatar avatar-s">
+                    <div class="avatar-name">S</div>
+                  </div>
+                  <div class="avatar avatar-m">
+                    <div class="avatar-name">M</div>
+                  </div>
+                  <div class="avatar avatar-l">
+                    <div class="avatar-name">L</div>
+                  </div>
+                  <div class="avatar avatar-l" style="background:url('assets/prom.png');background-size:cover;color:transparent;">.</div>
+                  <!--  ==================================================================================== AVATARES-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;avatar avatar-s&quot;&gt;
+&lt;div class=&quot;avatar-name&quot;&gt;S&lt;/div&gt;
+&lt;/div&gt;
+ &lt;div class=&quot;avatar avatar-m&quot;&gt;
+  &lt;div class=&quot;avatar-name&quot;&gt;M&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;avatar avatar-l&quot;&gt;
+ &lt;div class=&quot;avatar-name&quot;&gt;L&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;avatar avatar-l&quot; style=&quot;background:url(&quot;assets/prom.png&quot;);background-size:cover;color:transparent;&quot;&gt;.&lt;/div&gt;
+    </code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="breadcrumb">
+              <div class="types mt-4">
+                <h2>📦 Breadcrumb</h2>
+                <div class="example top p-5 top">
+                  <!--  ==================================================================================== MODALBOX-->
+                  <ul class="c-breadcrumb">
+                    <li><a href="#">Opción 1</a></li>
+                    <li><a href="#">Opción 2</a></li>
+                    <li><a href="#">Opción 3</a></li>
+                  </ul>
+                  <!--  ==================================================================================== MODALBOX-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;ul class=&quot;c-breadcrumb&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Opción 1&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Opción 2&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Opción 3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+            <div id="card"></div>
+            <div class="types">
+              <h2>📦 Card</h2>
+              <p>Para utilizar la estructura de card, bastara con ocupar <span class="bold">.card</span> junto con un div y así tener disponible este tipo de componente</p>
+              <div class="example p-4 top">
+                <div class="c-card">
+                  <p>Soy un card</p>
+                </div>
+              </div>
+              <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;c-card&quot;&gt;
+ &lt;p&gt;Soy un card&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+              <h3>⏺ Card item</h3>
+              <div class="example p-4">
+                <!--  ==================================================================================== card item-->
+                <div class="c-card item">
+                  <div class="img-content neutral-bg"><img src="https://media2.giphy.com/media/3oriNYvVkCgIhSIKic/giphy.gif?cid=ecf05e47tw4yi5rhv2gn43xqsebt8lh2ucc0gaad3zju2z3z&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g" alt></div>
+                  <div class="content m-3">
+                    <h4>Título</h4>
+                    <p>Contenido</p><a href="#">Link </a>
+                  </div>
+                </div>
+                <!--  ==================================================================================== card item-->
+              </div>
+              <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;c-card item&quot;&gt;
+  &lt;div class=&quot;img-content neutral-bg&quot;&gt;&lt;img src=&quot;-aqui la url de tu imagen-&quot; alt=&quot;&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;content m-3&quot;&gt;
+    &lt;h4&gt;Título&lt;/h4&gt;
+    &lt;p&gt;Contenido&lt;/p&gt;&lt;a href=&quot;#&quot;&gt;Link &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="pt-4" id="collapse">
+              <div class="types mt-4">
+                <h2>📦 Collapse</h2>
+                <div class="example top p-4">
+                  <!--  ==================================================================================== ALERT-->
+                  <div class="c-collapse-group">
+                    <details class="c-collapse">
+                      <summary>
+                        <h3>Dudas fiancieras</h3><img src="assets/chevron_down.svg" alt>
+                      </summary>
+                      <div class="c-c-content">
+                        <h4>Title</h4>
+                        <p>This is some text and <i>these words are italic</i></p>
+                      </div>
+                    </details>
+                    <details class="c-collapse">
+                      <summary>
+                        <h3>Créditos</h3><img src="assets/chevron_down.svg" alt>
+                      </summary>
+                      <div class="c-c-content">
+                        <h4>Title</h4>
+                        <p>This is some text and <i>these words are italic</i></p>
+                      </div>
+                    </details>
+                    <details class="c-collapse">
+                      <summary>
+                        <h3>Click to expand</h3><img src="assets/chevron_down.svg" alt>
+                      </summary>
+                      <div class="c-c-content">
+                        <h4>Title</h4>
+                        <p>This is some text and <i>these words are italic</i></p>
+                      </div>
+                    </details>
+                  </div>
+                  <!--  ==================================================================================== ALERT-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;c-collapse-group&quot;&gt;
+  &lt;details class=&quot;c-collapse&quot;&gt;
+    &lt;summary&gt;
+      &lt;h3&gt;Dudas fiancieras&lt;/h3&gt;&lt;img src=&quot;assets/chevron_down.svg&quot; alt=&quot;&quot;&gt;
+    &lt;/summary&gt;
+    &lt;div class=&quot;c-c-content&quot;&gt;
+      &lt;h4&gt;Title&lt;/h4&gt;
+      &lt;p&gt;This is some text and &lt;i&gt;these words are italic&lt;/i&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details class=&quot;c-collapse&quot;&gt;
+    &lt;summary&gt;
+      &lt;h3&gt;Créditos&lt;/h3&gt;&lt;img src=&quot;assets/chevron_down.svg&quot; alt=&quot;&quot;&gt;
+    &lt;/summary&gt;
+    &lt;div class=&quot;c-c-content&quot;&gt;
+      &lt;h4&gt;Title&lt;/h4&gt;
+      &lt;p&gt;This is some text and &lt;i&gt;these words are italic&lt;/i&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+  &lt;details class=&quot;c-collapse&quot;&gt;
+    &lt;summary&gt;
+      &lt;h3&gt;Click to expand&lt;/h3&gt;&lt;img src=&quot;assets/chevron_down.svg&quot; alt=&quot;&quot;&gt;
+    &lt;/summary&gt;
+    &lt;div class=&quot;c-c-content&quot;&gt;
+      &lt;h4&gt;Title&lt;/h4&gt;
+      &lt;p&gt;This is some text and &lt;i&gt;these words are italic&lt;/i&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="tooltip">
+              <div class="types mt-4">
+                <h2>📦 Tooltip</h2>
+                <div class="example p-4">
+                  <!--  ==================================================================================== TOOLTIP-->
+                  <div class="tooltip">
+                    <label>Holi 👋 Soy un tooltip, HOVER me !</label>
+                    <div class="tooltip-container box-shadow">
+                      <h4>Título</h4>
+                      <div class="tooltip-content">
+                        Muestran información concisa para guiar al usuario en alguna experiencia.
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ==================================================================================== TOOLTIP-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;tooltip&quot;&gt;
+  &lt;label&gt;Holi 👋 Soy un tooltip, HOVER me !&lt;/label&gt;
+  &lt;div class=&quot;tooltip-container box-shadow&quot;&gt;
+    &lt;h4&gt;Título&lt;/h4&gt;
+    &lt;div class=&quot;tooltip-content&quot;&gt;
+      Muestran información concisa para guiar al usuario en alguna experiencia.   
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="footer">
+              <div class="types mt-4">
+                <h2>📦 Footer</h2>
+                <div class="example top p-4">
+                  <!--  ==================================================================================== PROGRES BAR-->
+                  <div class="c-footer white-bg">
+                    <div class="text-center pb-4"><a href="#">Ir arriba</a></div>
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <h4>Menú</h4>
+                          <ul>
+                            <li>Inicio</li>
+                            <li>Developers Coppel</li>
+                            <li>Customer Experience</li>
+                          </ul>
+                        </div>
+                        <div class="col-lg-6">
+                          <h2>👋</h2><br>Visualiza el footer completo <a href="#footer-site">al final de esta página.</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ==================================================================================== PROGRES BAR-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;c-footer white-bg&quot;&gt;
+  &lt;div class=&quot;text-center pb-4&quot;&gt;&lt;a href=&quot;#&quot;&gt;Ir arriba&lt;/a&gt;&lt;/div&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;h4&gt;Menú&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;Inicio&lt;/li&gt;
+          &lt;li&gt;Developers Coppel&lt;/li&gt;
+          &lt;li&gt;Customer Experience&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;h2&gt;👋&lt;/h2&gt;&lt;br&gt;Visualiza el footer completo &lt;a href=&quot;#footer-site&quot;&gt;al final de esta página.&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="header">
+              <div class="types mt-4">
+                <h2>📦 Header</h2>
+                <h3>⏺ Header</h3>
+                <div class="example top p-4">
+                  <!--  ==================================================================================== PROGRES BAR-->
+                  <div class="c-header-background background-bg b-center hv-25" style="background-image: url('https://images.unsplash.com/photo-1694125398686-fdbce8ca1054?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1887&amp;q=80');"></div>
+                  <!--  Some utilities -->
+                  <!--  Height: .vh-25, .vh-50, .vh-75, .vh-100 -->
+                  <!--  Position&repeat: .no-repeat-img, .img-cover -->
+                  <!--  ==================================================================================== PROGRES BAR-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;c-header-background background-bg b-center hv-25&quot; style=&quot;background-image: url(&quot;-aqui ty imagen-&quot;);&quot;&gt;&lt;/div&gt;
+</code></pre>
+                <h3>⏺ Header with content</h3>
+                <div class="example top p-4">
+                  <div class="c-header-background background-bg b-center hv-50 no-repeat-img img-cover" style="background-image: url('https://images.unsplash.com/photo-1694125398686-fdbce8ca1054?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1887&amp;q=80');">
+                    <div class="container-sm h-100">
+                      <div class="row h-100 justify-content-center align-items-center">
+                        <div class="col-sm-6">
+                          <h3 class="primary">Secciones</h3>
+                          <p class="white">Hola soy un contenido</p>
+                        </div>
+                        <div class="col-sm-6">
+                          <h3 class="primary">Secciones</h3>
+                          <p class="white">Hola soy un contenidoç</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;container-sm h-100&quot;&gt;
+  &lt;div class=&quot;row h-100 justify-content-center align-items-center&quot;&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+      &lt;h3 class=&quot;primary&quot;&gt;Secciones&lt;/h3&gt;
+      &lt;p class=&quot;white&quot;&gt;Hola soy un contenido&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-sm-6&quot;&gt;
+      &lt;h3 class=&quot;primary&quot;&gt;Secciones&lt;/h3&gt;
+      &lt;p class=&quot;white&quot;&gt;Hola soy un contenidoç&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="inputs">
+              <div class="types mt-4">
+                <h2>📦 Input</h2>
+                <h3>⏺ Regular input</h3>
+                <div class="example top p-4">
+                  <form class="form-coppel" action="index.html" method="post">
+                    <label for>Nombre <span class="small neutral">(🥑 Regular input)</span></label>
+                    <input type="text" name placeholder="María Gonzalez ejm.">
+                    <label class="small" for>Un mensaje al usuario 🙃</label>
+                  </form>
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(🥑 Regular input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;María Gonzalez ejm.&quot;&gt;
+  &lt;label class=&quot;small&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                <h3>👉 Estados del input</h3>
+                <div class="div"> 
+                  <h4>Error input</h4>
+                  <div class="example top p-4">
+                    <form class="form-coppel" action="index.html" method="post">
+                      <label for>Nombre <span class="small neutral">(🔥 Error input)</span></label>
+                      <input class="error-border" type="text" name placeholder="María Gonzalez ejm.">
+                      <label class="small error" for>Un mensaje al usuario 🙃</label>
+                    </form>
+                  </div>
+                  <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(🔥 Error input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input class=&quot;error-border&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;María Gonzalez ejm.&quot;&gt;
+  &lt;label class=&quot;small error&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                  <h4>Succes input</h4>
+                  <div class="example top p-4">
+                    <form class="form-coppel" action="index.html" method="post">
+                      <label for>Nombre <span class="small neutral">(✅ Success input)</span></label>
+                      <input class="success-border" type="text" name placeholder="María Gonzalez ejm.">
+                      <label class="small success" for>Un mensaje al usuario 🙃</label>
+                    </form>
+                  </div>
+                  <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(✅ Success input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input class=&quot;success-border&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;María Gonzalez ejm.&quot;&gt;
+  &lt;label class=&quot;small success&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                  <h4>Disabled input</h4>
+                  <div class="example top p-4">
+                    <form class="form-coppel" action="index.html" method="post">
+                      <label class="neutral" for>Nombre <span class="small neutral">(✅ Disabled input)</span></label>
+                      <input type="text" name placeholder="María Gonzalez ejm." disabled>
+                      <label class="small neutral" for>Un mensaje al usuario 🙃</label>
+                    </form>
+                  </div>
+                  <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+  &lt;label class=&quot;neutral&quot; for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(✅ Disabled input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;María Gonzalez ejm.&quot; disabled=&quot;&quot;&gt;
+  &lt;label class=&quot;small neutral&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+                <h3>👉 Tamaños de input</h3>
+                <div class="div">
+                  <h4>Small</h4>
+                  <div class="example top p-4">
+                    <form class="form-coppel" action="index.html" method="post">
+                      <label for>Nombre <span class="small neutral">(🥑 Small input)</span></label>
+                      <input class="c-small" type="text" name placeholder="María Gonzalez ejm.">
+                      <label class="small" for>Un mensaje al usuario 🙃</label>
+                    </form>
+                  </div>
+                  <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(🥑 Small input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input class=&quot;c-small&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;María Gonzalez ejm.&quot;&gt;
+  &lt;label class=&quot;small&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;
+</code></pre>
+                  <h4>Regular</h4>
+                  <div class="example top p-4">
+                    <form class="form-coppel" action="index.html" method="post">
+                      <label for>Nombre <span class="small neutral">(🥑 Medium /Regular input)</span></label>
+                      <input class="c-medium" type="text" name placeholder="María Gonzalez ejm.">
+                      <label class="small" for>Un mensaje al usuario 🙃</label>
+                    </form>
+                  </div>
+                  <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(🥑 Medium /Regular input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input class=&quot;c-medium&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;María Gonzalez ejm.&quot;&gt;
+  &lt;label class=&quot;small&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                  <h4>Large</h4>
+                  <div class="example top p-4">
+                    <form class="form-coppel" action="index.html" method="post">
+                      <label for>Nombre <span class="small neutral">(🥑 Large input)</span></label>
+                      <input class="c-large" type="text" name placeholder="María Gonzalez ejm.">
+                      <label class="small" for>Un mensaje al usuario 🙃</label>
+                    </form>
+                  </div>
+                  <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(🥑 Large input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input class=&quot;c-large&quot; type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;María Gonzalez ejm.&quot;&gt;
+  &lt;label class=&quot;small&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                  <h4>Xlarge</h4>
+                  <div class="example top p-4">
+                    <form class="form-coppel" action="index.html" method="post">
+                      <label for>Nombre <span class="small neutral">(🥑 XLarge input)</span></label>
+                      <input class="c-xlarge" type="text" name placeholder="María Gonzalez ejm.">
+                      <label class="small" for>Un mensaje al usuario 🙃</label>
+                    </form>
+                  </div>
+                  <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(🥑 Regular input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input type=&quot;text&quot; class=&quot;c-xlarge&quot; name=&quot;&quot; placeholder=&quot;María Gonzalez ejm.&quot;&gt;
+  &lt;label class=&quot;small&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                </div>
+                <h3>⏺ Dropdown</h3>
+                <div class="example top p-4">
+                  <form class="form-coppel" action="index.html" method="post" disabled>
+                    <label for>Nombre <span class="small neutral">(📦 Dropdown input)</span></label>
+                    <div class="select">
+                      <input type="radio" name="option"><i class="toggle icon icon-arrow-down"></i><i class="toggle icon icon-arrow-up"></i><span class="placeholder">Selecciona una opción</span>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Speedometer</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Fire</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option" disabled><span class="title animated fadeIn">Handbag</span>
+                      </label>
+                      <label class="option">
+                        <input type="radio" name="option"><span class="title animated fadeIn">Badge</span>
+                      </label>
+                    </div>
+                    <label class="small neutral" for>Un mensaje al usuario 🙃</label>
+                  </form>
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel&quot; action=&quot;index.html&quot; method=&quot;post&quot; disabled=&quot;&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Nombre &lt;span class=&quot;small neutral&quot;&gt;(📦 Dropdown input)&lt;/span&gt;&lt;/label&gt;
+  &lt;div class=&quot;select&quot;&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;option&quot;&gt;&lt;i class=&quot;toggle icon icon-arrow-down&quot;&gt;&lt;/i&gt;&lt;i class=&quot;toggle icon icon-arrow-up&quot;&gt;&lt;/i&gt;&lt;span class=&quot;placeholder&quot;&gt;Selecciona una opción&lt;/span&gt;
+    &lt;label class=&quot;option&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;option&quot;&gt;&lt;span class=&quot;title animated fadeIn&quot;&gt;Speedometer&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;option&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;option&quot;&gt;&lt;span class=&quot;title animated fadeIn&quot;&gt;Fire&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;option&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;option&quot; disabled=&quot;&quot;&gt;&lt;span class=&quot;title animated fadeIn&quot;&gt;Handbag&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;option&quot;&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;option&quot;&gt;&lt;span class=&quot;title animated fadeIn&quot;&gt;Badge&lt;/span&gt;
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;label class=&quot;small neutral&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                <h3>⏺ Date</h3>
+                <div class="example top p-4">
+                  <form class="form-coppel" action>
+                    <label for>Fecha <span class="small neutral">(📦 🔥 Date input)</span></label>
+                    <input type="date" name="fecha">
+                    <label class="small neutral" for>Un mensaje al usuario 🙃</label>
+                  </form>
+                </div>
+                <pre class="example_code m-0 bottom"><code> &lt;form class=&quot;form-coppel&quot; action=&quot;&quot;&gt;
+  &lt;label for=&quot;&quot;&gt;Fecha &lt;span class=&quot;small neutral&quot;&gt;(📦 🔥 Date input)&lt;/span&gt;&lt;/label&gt;
+  &lt;input type=&quot;date&quot; name=&quot;fecha&quot;&gt;
+  &lt;label class=&quot;small neutral&quot; for=&quot;&quot;&gt;Un mensaje al usuario 🙃&lt;/label&gt;
+&lt;/form&gt;</code></pre>
+                <h3 id="check">⏺ Checkbox</h3>
+                <div class="example top p-5">
+                  <!--  ==================================================================================== CHECKBOX-->
+                  <input type="checkbox" name>
+                  <label for>Checkbox</label>
+                  <!--  ==================================================================================== CHECKBOX-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;input type=&quot;checkbox&quot; name=&quot;&quot;&gt;</code></pre>
+                <h3 id="upload">⏺ Upload
+                  <div class="alert"> </div>
+                </h3>
+                <div class="example top p-5">
+                  <!--  ==================================================================================== CHECKBOX-->
+                  <div class="form-coppel">
+                    <label class="c-upload" for="images">
+                      <h3 class="c-upload-title">Drop files here</h3>o
+                      <button class="primary-button m-3 no-click" type="submit">Subir archivo</button>
+                      <input id="images" type="file" accept="image/*" required>
+                    </label>
+                  </div>
+                  <!--  ==================================================================================== CHECKBOX-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;form-coppel&quot;&gt;
+  &lt;label class=&quot;c-upload&quot; for=&quot;images&quot;&gt;
+    &lt;h3 class=&quot;c-upload-title&quot;&gt;Drop files here&lt;/h3&gt;o
+    &lt;button class=&quot;primary-button m-3 no-click&quot; type=&quot;submit&quot;&gt;Subir archivo&lt;/button&gt;
+    &lt;input id=&quot;images&quot; type=&quot;file&quot; accept=&quot;image/*&quot; required=&quot;&quot;&gt;
+  &lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+                <h3 id="uploader">⏺ Uploader</h3>
+                <div class="example top p-4">
+                  <!--  ==================================================================================== UPLOADER-->
+                  <form class="form-coppel loader" action>
+                    <label class="file" for="avatar">Choose..</label>
+                    <input id="avatar" type="file" name="avatar" accept="image/png, image/jpeg">
+                    <input type="text" name placeholder="File.png">
+                  </form>
+                  <!--  ==================================================================================== UPLOADER-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;form class=&quot;form-coppel loader&quot; action=&quot;&quot;&gt;
+  &lt;label class=&quot;file&quot; for=&quot;avatar&quot;&gt;Choose..&lt;/label&gt;
+  &lt;input id=&quot;avatar&quot; type=&quot;file&quot; name=&quot;avatar&quot; accept=&quot;image/png, image/jpeg&quot;&gt;
+  &lt;input type=&quot;text&quot; name=&quot;&quot; placeholder=&quot;File.png&quot;&gt;
+&lt;/form&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="list">
+              <div class="types mt-4">
+                <h2>📦 List
+                  <div class="alert">NEW 🎉</div>
+                </h2>
+                <div class="example top p-4">
+                  <!--  ==================================================================================== ALERT-->
+                  <div class="c-list">
+                    <div class="c-list-item"><span>
+                        🏅 Febrero✅</span></div>
+                    <div class="c-list-item"><span>
+                        🏅 Marzo✅</span></div>
+                    <div class="c-list-item"><span>
+                        🏅 Abril✅</span></div>
+                  </div>
+                  <!--  ==================================================================================== ALERT-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;c-list&quot;&gt;
+  &lt;div class=&quot;c-list-item&quot;&gt;&lt;span&gt;
+      🏅 Febrero✅&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;c-list-item&quot;&gt;&lt;span&gt;
+      🏅 Marzo✅&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&quot;c-list-item&quot;&gt;&lt;span&gt;
+      🏅 Abril✅&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="modal">
+              <div class="types mt-4">
+                <h2>📦 Modal</h2>
+                <div class="example top p-5">
+                  <!--  ==================================================================================== MODALBOX-->
+                  <div class="modalbox"><a href="#modal"><img src="assets/cross.svg"></a>
+                    <h1>Título</h1>
+                    <p>La app que seleccionaste ya no se mostrará en tu pantalla de inicio.</p>
+                    <p>Si deseas verla de nuevo en el inicio ve a la sección deMis Aplicación y márcala como destacada.</p>
+                    <button class="primary-button mb-3" type="button" name="button">De acuerdo, quitar</button>
+                    <button class="secondary-button" type="button" name="button">Cancelar</button>
+                  </div>
+                  <!--  ==================================================================================== MODALBOX-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;modalbox&quot;&gt;&lt;a href=&quot;#modal&quot;&gt;&lt;img src=&quot;assets/cross.svg&quot;&gt;&lt;/a&gt;
+  &lt;h1&gt;Título&lt;/h1&gt;
+  &lt;p&gt;La app que seleccionaste ya no se mostrará en tu pantalla de inicio.&lt;/p&gt;
+  &lt;p&gt;Si deseas verla de nuevo en el inicio ve a la sección deMis Aplicación y márcala como destacada.&lt;/p&gt;
+  &lt;button class=&quot;primary-button mb-3&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;De acuerdo, quitar&lt;/button&gt;
+  &lt;button class=&quot;secondary-button&quot; type=&quot;button&quot; name=&quot;button&quot;&gt;Cancelar&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="navbar">
+              <div class="types mt-4">
+                <h2>📦 Navbar</h2>
+                <!--   NAVBAR ************************************-->
+                <div class="example top p-5">
+                  <!--  ==================================================================================== CODE-->
+                  <nav class="c-navbar">
+                    <div class="brand">
+                      <h4>coppel-design.com</h4>
+                    </div>
+                    <ul class="menu">
+                      <li><a href="#">Brand</a></li>
+                      <li><a href="#">Navbar</a></li>
+                      <li><a href="#">Components</a></li>
+                    </ul>
+                  </nav>
+                  <!--  ==================================================================================== CODE-->
+                </div>
+                <!--   NAVBAR ************************************-->
+                <pre class="example_code m-0 bottom"><code>&lt;nav class=&quot;c-navbar&quot;&gt;
+  &lt;div class=&quot;brand&quot;&gt;
+    &lt;h4&gt;coppel-design.com&lt;/h4&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;menu&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Brand&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Navbar&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Components&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="progress">
+              <div class="types mt-4">
+                <h2>📦 ProgressBar</h2>
+                <div class="example top p-4">
+                  <!--  ==================================================================================== PROGRES BAR-->
+                  <div class="progressBar">
+                    <div class="groupBar">
+                      <div class="bar"></div>
+                      <div class="progress" style="width:80%"></div>
+                    </div>
+                  </div>
+                  <!--  ==================================================================================== PROGRES BAR--><br>
+                  <hr><br>
+                  <!--  ==================================================================================== PROGESS BAR PERCENT-->
+                  <div class="progressBar barPercent">
+                    <div class="groupBar">
+                      <div class="bar"></div>
+                      <div class="progress" style="width:50%"></div>
+                    </div>
+                    <label class="small text-center" for>60%</label>
+                  </div>
+                  <!--  ==================================================================================== PROGESS BAR PERCENT-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;!--  ==================================================================================== PROGRES BAR--&gt;
+&lt;div class=&quot;progressBar&quot;&gt;
+  &lt;div class=&quot;groupBar&quot;&gt;
+    &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;progress&quot; style=&quot;width:80%&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--  ==================================================================================== PROGRES BAR--&gt;&lt;br&gt;
+&lt;hr&gt;&lt;br&gt;
+&lt;!--  ==================================================================================== PROGESS BAR PERCENT--&gt;
+&lt;div class=&quot;progressBar barPercent&quot;&gt;
+  &lt;div class=&quot;groupBar&quot;&gt;
+    &lt;div class=&quot;bar&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;progress&quot; style=&quot;width:50%&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;label class=&quot;small text-center&quot; for=&quot;&quot;&gt;60%&lt;/label&gt;
+&lt;/div&gt;
+&lt;!--  ==================================================================================== PROGESS BAR PERCENT--&gt;</code></pre>
+              </div>
+            </div>
+            <div id="range"></div>
+            <div class="types"> 
+              <h2>📦 Range</h2>
+              <div class="example top p-4">
+                <!--  ==================================================================================== ALERT-->
+                <div class="c-range">
+                  <input class="slider" id="myRange" type="range" min="1" max="100" value="50">
+                </div>
+                <div class="d-flex justify-content-between">
+                  <label class="small">Mónto mínimo $1,000</label>
+                  <label class="small">Mónto máximo $5,000</label>
+                </div>
+                <!--  ==================================================================================== ALERT-->
+              </div>
+              <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;c-range&quot;&gt;
+  &lt;input class=&quot;slider&quot; id=&quot;myRange&quot; type=&quot;range&quot; min=&quot;1&quot; max=&quot;100&quot; value=&quot;50&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+  &lt;label class=&quot;small&quot;&gt;Mónto mínimo $1,000&lt;/label&gt;
+  &lt;label class=&quot;small&quot;&gt;Mónto máximo $5,000&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <div class="pt-4" id="stepper">
+              <div class="types mt-4">
+                <h2>📦 Stepper</h2>
+                <div class="example p-5">
+                  <!--  ==================================================================================== STEPER-->
+                  <div class="stepper">
+                    <div class="stepper-group">
+                      <div class="stepper-step primary-bg">
+                        <div class="checked-step"></div>
+                      </div>
+                      <div class="stepper-text">
+                        <label for>Título</label>
+                        <label class="small">Subtitle</label>
+                      </div>
+                      <div class="stepper-line"></div>
+                    </div>
+                    <div class="stepper-group">
+                      <div class="stepper-step neutral-bg pencil">1</div>
+                      <div class="stepper-text">
+                        <label for>Título</label>
+                        <label class="small">Subtitle</label>
+                      </div>
+                      <div class="stepper-line"></div>
+                    </div>
+                    <div class="stepper-group">
+                      <div class="stepper-step neutral-bg pencil">2</div>
+                      <div class="stepper-text">
+                        <label for>Título</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  ==================================================================================== STEPER-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;div class=&quot;stepper&quot;&gt;
+  &lt;div class=&quot;stepper-group&quot;&gt;
+    &lt;div class=&quot;stepper-step primary-bg&quot;&gt;
+      &lt;div class=&quot;checked-step&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;stepper-text&quot;&gt;
+      &lt;label for=&quot;&quot;&gt;Título&lt;/label&gt;
+      &lt;label class=&quot;small&quot;&gt;Subtitle&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;stepper-line&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;stepper-group&quot;&gt;
+    &lt;div class=&quot;stepper-step neutral-bg pencil&quot;&gt;1&lt;/div&gt;
+    &lt;div class=&quot;stepper-text&quot;&gt;
+      &lt;label for=&quot;&quot;&gt;Título&lt;/label&gt;
+      &lt;label class=&quot;small&quot;&gt;Subtitle&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;stepper-line&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;stepper-group&quot;&gt;
+    &lt;div class=&quot;stepper-step neutral-bg pencil&quot;&gt;2&lt;/div&gt;
+    &lt;div class=&quot;stepper-text&quot;&gt;
+      &lt;label for=&quot;&quot;&gt;Título&lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="table">
+              <div class="types mt-4">
+                <h2>📦 Table</h2>
+                <div class="example top p-4">
+                  <!--  ==================================================================================== ALERT-->
+                  <table class="full zebra-striped" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Language</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Some</td>
+                        <td>One</td>
+                        <td>English</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Joe</td>
+                        <td>Sixpack</td>
+                        <td>English</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Stu</td>
+                        <td>Dent</td>
+                        <td>Code</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!--  ==================================================================================== ALERT-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;table class=&quot;full zebra-striped&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;First Name&lt;/th&gt;
+      &lt;th&gt;Last Name&lt;/th&gt;
+      &lt;th&gt;Language&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;1&lt;/td&gt;
+      &lt;td&gt;Some&lt;/td&gt;
+      &lt;td&gt;One&lt;/td&gt;
+      &lt;td&gt;English&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;Joe&lt;/td&gt;
+      &lt;td&gt;Sixpack&lt;/td&gt;
+      &lt;td&gt;English&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+     &lt;td&gt;3&lt;/td&gt;
+      &lt;td&gt;Stu&lt;/td&gt;
+      &lt;td&gt;Dent&lt;/td&gt;
+      &lt;td&gt;Code&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+              </div>
+            </div>
+            <div class="pt-4" id="tabs">
+              <div class="types mt-4">
+                <h2>📦 Tabs</h2>
+                <div class="example top p-4">
+                  <!--  ==================================================================================== ALERT-->
+                  <ul class="c-tabs">
+                    <li>Opción 1</li>
+                    <li>Opción 2</li>
+                    <li>Opción 3</li>
+                    <li>Opción 4</li>
+                  </ul>
+                  <!--  ==================================================================================== ALERT-->
+                </div>
+                <pre class="example_code m-0 bottom"><code>&lt;ul class=&quot;c-tabs&quot;&gt;
+  &lt;li&gt;Opción 1&lt;/li&gt;
+  &lt;li&gt;Opción 2&lt;/li&gt;
+  &lt;li&gt;Opción 3&lt;/li&gt;
+  &lt;li&gt;Opción 4&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+            </div>
+            <h1 id="column">Sistema de columnas</h1>
+            <hr>
+            <p></p>Integrado a este paquete encontraras el sistema de columnas de bootstrap sientete libre de incluirlo o quitarlo del coppelize.css según tus necesidades. Si es que decides dejarlo, puedes utilizar col-md, col-lg, container y todo el poder del grid de este framework. Para leer más sobre su uso puedes <a href="https://getbootstrap.com/docs/4.0/layout/grid/" target="_blank">visitar su documentación</a><br>
+            <h1 id="column">Sistema de utilidades</h1>
+            <hr>
+            <p></p>Integrado a este paquete encontraras el sistema de utilidades y modificadores tales como p-1, m-1, <a href="https://getbootstrap.com/docs/4.0/utilities/borders/" target="_blank">visitar su documentación</a><br>
+            <hr>
+            <hr>
+            <hr><small></small><br>Si tienes alguna duda o sugerencia nos puedes contactar a <a href="mailto:raul.gonzalezg@coppel.com">raul.gonzalezg@coppel.com</a> para mayor support.<br><br>🏀 by Coppel Design Standards - Grupo Coppel ®<br><br><small></small><i>Esta librería antes se llamo Coppelize.css pero ahora es Coltrane.css</i>
+          </div>
+        </div>
+      </div>
     </div>
-
     <footer class="c-footer white-bg" id="footer-site">
       <div class="text-center pb-4"><a href="#">Ir arriba</a></div>
-      <div class="container  p-5">
-        <div class="row ">
+      <div class="container">
+        <div class="row p-5">
           <div class="col-lg-2"></div>
           <div class="col-lg-2">
             <h4>Menú</h4>
             <ul>
-              <li> Inicio</li>
-              <li> Developers Coppel</li>
-              <li> Customer Experience</li>
+              <li>Inicio</li>
+              <li>Developers Coppel</li>
+              <li>Customer Experience</li>
             </ul>
           </div>
           <div class="col-lg-1"></div>
           <div class="col-lg-2">
             <h4>Sitios relacionados</h4>
             <ul>
-              <li> Coltrane.Figma</li>
-              <li> Coltrane.CSS</li>
-              <li> Coltrane.Ilustraciones</li>
+              <li>Coltrane.Figma</li>
+              <li>Coltrane.CSS</li>
+              <li>Coltrane.Ilustraciones</li>
             </ul>
           </div>
           <div class="col-lg-1"></div>
           <div class="col-lg-2">
             <h4>Contáctanos</h4>
             <ul>
-              <li> Misión, Visión y Valores</li>
-              <li> Código de ética</li>
-              <li> Mapa del sitio </li>
+              <li>Misión, Visión y Valores</li>
+              <li>Código de ética</li>
+              <li>Mapa del sitio</li>
             </ul>
           </div>
           <div class="col-lg-1"></div>
         </div>
       </div>
-      <div class="caption text-center p-4">
-        Aviso de privacidad
-        <br>
-        Copyright© 2023 Coppel - Todos los derechos reservados.
-      </div>
+      <div class="caption text-center p-4">Aviso de privacidad<br>Copyright© 2023 Coppel - Todos los derechos reservados.</div>
     </footer>
-
-
   </body>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJ2YXFLM5V"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-PJ2YXFLM5V');
+    
+    
+                
+  </script>
 </html>
